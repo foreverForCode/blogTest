@@ -21,7 +21,7 @@
         "prism",
         "-highlight",
         "url-embed",
-        "page-footer-ex"
+        "local-pagefooter"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -85,11 +85,11 @@
                 "prismjs/themes/prism-solarizedlight.css"
             ]
         },
-        "page-footer-ex": {
-            "copyright": "By [yangzh](http://yangzh.cn)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布",
-            "markdown": true,
-            "update_label": "此页面修订于：",
-            "update_format": "YYYY-MM-DD HH:mm:ss"
-        }
+        "local-pagefooter": {
+            "copyright":"&copy jordan",
+            "islocal" : true, 
+            "modify_label": "The document reversion time: ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+          }
     }
 }
