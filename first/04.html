@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>入门 · GitBook</title>
+        <title>解决构建问题 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="02.html" />
+    <link rel="next" href="03.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="02.html" />
     
 
     </head>
@@ -102,7 +102,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="01.html">
+        <li class="chapter " data-level="1.2" data-path="01.html">
             
                 <a href="01.html">
             
@@ -129,7 +129,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="04.html">
+        <li class="chapter active" data-level="1.3.1" data-path="04.html">
             
                 <a href="04.html">
             
@@ -190,7 +190,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >入门</a>
+        <a href=".." >解决构建问题</a>
     </h1>
 </div>
 
@@ -205,28 +205,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5165;&#x95E8;">&#x5165;&#x95E8;</h2>
-<h3 id="&#x5982;&#x4F55;&#x5B89;&#x88C5;gitbook-cli">&#x5982;&#x4F55;&#x5B89;&#x88C5;gitbook-cli</h3>
+                                <h1 id="&#x89E3;&#x51B3;&#x6784;&#x5EFA;&#x95EE;&#x9898;">&#x89E3;&#x51B3;&#x6784;&#x5EFA;&#x95EE;&#x9898;</h1>
+<h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2>
+<p><code>gitbook build</code>&#x51FA;&#x73B0;&#x4E00;&#x5B9A;&#x6982;&#x7387;&#x7684;&#x5931;&#x8D25;&#xFF0C;&#x9700;&#x8981;&#x628A;&#x6E90;&#x7801;&#x4E2D;&#x7684;&#x5BF9;&#x5E94;&#x6587;&#x4EF6;&#x6539;&#x6210;false</p>
 <blockquote>
-<p>&#x4E0D;&#x5EFA;&#x8BAE;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x7684;gitbook-cli&#xFF0C;&#x6709;&#x5751;</p>
+<p> <strong> .gitbook\versions\3.2.3\lib\output\website\copyPluginAssets.js </strong></p>
 </blockquote>
-<pre><code>npm install gitbook-cli@2.0.0 -g
-</code></pre><h3 id="&#x5982;&#x4F55;&#x521D;&#x59CB;&#x5316;">&#x5982;&#x4F55;&#x521D;&#x59CB;&#x5316;</h3>
-<pre><code>gitbook init
-</code></pre><blockquote>
-<p>&#x5B83;&#x4F1A;&#x751F;&#x6210; README.md &#x548C; SUMMARY.md</p>
-</blockquote>
-<p>README.md &#x662F;&#x9996;&#x9875;&#xFF0C;SUMMARY.md &#x662F;&#x6307;&#x6587;&#x7AE0;&#x76EE;&#x5F55;</p>
-<h3 id="&#x52A8;&#x6001;&#x9884;&#x89C8;">&#x52A8;&#x6001;&#x9884;&#x89C8;</h3>
-<pre><code>gitbook serve
-</code></pre><blockquote>
-<p>&#x542F;&#x52A8;&#x540E;&#x624B;&#x52A8;&#x5220;&#x9664;_book&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x53EF;&#x89C4;&#x907F;bug</p>
-</blockquote>
-<h3 id="&#x6253;&#x5305;&#x9759;&#x6001;html">&#x6253;&#x5305;&#x9759;&#x6001;HTML</h3>
-<pre><code>gitbook build
-</code></pre><blockquote>
-<p>&#x4F1A;&#x6210;_book&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x9759;&#x6001;HTML&#x6587;&#x4EF6;&#x90FD;&#x5B58;&#x653E;&#x5728;&#x8FD9;&#x91CC;</p>
-</blockquote>
+<pre><code class="lang-js">
+    <span class="hljs-keyword">return</span> fs.copyDir(
+
+        assertFolder,
+        assertOutputFolder,
+        {
+
+            deleteFirst:<span class="hljs-literal">false</span>,
+            overwrite:<span class="hljs-literal">true</span>,
+            confirm:<span class="hljs-literal">false</span>
+        }
+    )
+</code></pre>
+<ul>
+<li>&#x628A;&#x4E24;&#x5904;&#x7684; <strong>confirm</strong> &#x6539;&#x6210;false</li>
+</ul>
 
                                 
                                 </section>
@@ -254,12 +254,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                <a href="02.html" class="navigation navigation-prev " aria-label="Previous page: 新手指南">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="02.html" class="navigation navigation-next " aria-label="Next page: 新手指南">
+                <a href="03.html" class="navigation navigation-next " aria-label="Next page: 我的book.json">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -270,7 +270,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"入门","level":"1.2","depth":1,"next":{"title":"新手指南","level":"1.3","depth":1,"path":"first/02.md","ref":"first/02.md","articles":[{"title":"解决构建问题","level":"1.3.1","depth":2,"path":"first/04.md","ref":"first/04.md","articles":[]}]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"first/01.md","mtime":"2020-04-20T09:17:35.477Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-20T09:18:35.854Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"解决构建问题","level":"1.3.1","depth":2,"next":{"title":"我的book.json","level":"1.4","depth":1,"path":"first/03.md","ref":"first/03.md","articles":[]},"previous":{"title":"新手指南","level":"1.3","depth":1,"path":"first/02.md","ref":"first/02.md","articles":[{"title":"解决构建问题","level":"1.3.1","depth":2,"path":"first/04.md","ref":"first/04.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"first/04.md","mtime":"2020-04-20T09:16:08.852Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-20T09:18:35.854Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
