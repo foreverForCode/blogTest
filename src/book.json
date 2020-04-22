@@ -1,3 +1,4 @@
+
 {
     "title": "开发文档",
     "author": "jordan",
@@ -18,6 +19,7 @@
         "-search",
         "search-pro",
         "-livereload",
+        "prism",
         "-highlight",
         "local-pagefooter",
         "pageview-count",
@@ -31,6 +33,11 @@
         "simple-page-toc": {
             "maxDepth": 4,
             "skipFirstH1": true
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
         },
         "sharing": {
             "douban": false,

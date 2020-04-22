@@ -45,6 +45,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-pagefooter/footer.css">
                 
             
@@ -249,96 +253,102 @@
 <blockquote>
 <p>book.json &#x5B58;&#x653E;&#x5728;src&#x76EE;&#x5F55;&#x4E0B;</p>
 </blockquote>
-<pre><code class="lang-json">
-{
-    &quot;title&quot;: &quot;&#x5F00;&#x53D1;&#x6587;&#x6863;&quot;,
-    &quot;author&quot;: &quot;jordan&quot;,
-    &quot;plugins&quot;: [
-        &quot;-sharing&quot;,
-        &quot;sharing-plus&quot;,
-        &quot;include-codeblock&quot;,
-        &quot;back-to-top-button&quot;,
-        &quot;chapter-fold&quot;,
-        &quot;simple-page-toc&quot;,
-        &quot;page-toc-button&quot;,
-        &quot;auto-scroll-table&quot;,
-        &quot;popup&quot;,
-        &quot;splitter&quot;,
-        &quot;hide-element&quot;,
-        &quot;code&quot;,
-        &quot;-lunr&quot;,
-        &quot;-search&quot;,
-        &quot;search-pro&quot;,
-        &quot;-livereload&quot;,
-        &quot;-highlight&quot;,
-        &quot;local-pagefooter&quot;,
-        &quot;pageview-count&quot;,
-        &quot;alerts&quot;,
-        &quot;include-csv&quot;
-    ],
-    &quot;pluginsConfig&quot;: {
-        &quot;theme-default&quot;: {
-            &quot;showLevel&quot;: true
-        },
-        &quot;simple-page-toc&quot;: {
-            &quot;maxDepth&quot;: 4,
-            &quot;skipFirstH1&quot;: true
-        },
-        &quot;sharing&quot;: {
-            &quot;douban&quot;: false,
-            &quot;facebook&quot;: false,
-            &quot;google&quot;: false,
-            &quot;hatenaBookmark&quot;: false,
-            &quot;instapaper&quot;: false,
-            &quot;line&quot;: false,
-            &quot;linkedin&quot;: false,
-            &quot;messenger&quot;: false,
-            &quot;pocket&quot;: false,
-            &quot;qq&quot;: true,
-            &quot;qzone&quot;: true,
-            &quot;stumbleupon&quot;: false,
-            &quot;twitter&quot;: false,
-            &quot;viber&quot;: false,
-            &quot;vk&quot;: false,
-            &quot;weibo&quot;: true,
-            &quot;whatsapp&quot;: false,
-            &quot;all&quot;: [
-                &quot;facebook&quot;,
-                &quot;google&quot;,
-                &quot;twitter&quot;,
-                &quot;weibo&quot;,
-                &quot;qq&quot;,
-                &quot;linkedin&quot;,
-                &quot;qzone&quot;,
-                &quot;douban&quot;
-            ]
-        },
-        &quot;include-codeblock&quot;: {
-            &quot;template&quot;: &quot;ace&quot;,
-            &quot;unindent&quot;: true,
-            &quot;edit&quot;: false
-        },
-        &quot;code&quot;: {
-            &quot;copyButtons&quot;: true
-        },
+<pre class="language-"><code class="lang-json">
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5F00;&#x53D1;&#x6587;&#x6863;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jordan&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;-sharing&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;sharing-plus&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;include-codeblock&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;back-to-top-button&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;chapter-fold&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;simple-page-toc&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;page-toc-button&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;auto-scroll-table&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;popup&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;splitter&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;hide-element&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;code&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;-lunr&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;-search&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;search-pro&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;-livereload&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;prism&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;-highlight&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;local-pagefooter&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;pageview-count&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;alerts&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;include-csv&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;theme-default&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;showLevel&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;simple-page-toc&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;maxDepth&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;skipFirstH1&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;prism&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;css&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;prismjs/themes/prism-solarizedlight.css&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sharing&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;douban&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;facebook&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;google&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;hatenaBookmark&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;instapaper&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;line&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;linkedin&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;messenger&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;pocket&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;qq&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;qzone&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;stumbleupon&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;twitter&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;viber&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;vk&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;weibo&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;whatsapp&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;all&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;facebook&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;google&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;twitter&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;weibo&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;qq&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;linkedin&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;qzone&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;douban&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;include-codeblock&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;template&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ace&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;unindent&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;edit&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;copyButtons&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-        &quot;local-pagefooter&quot;: {
-            &quot;copyright&quot;: &quot;jordan&quot;,
-            &quot;islocal&quot;: true,
-            &quot;modify_label&quot;: &quot;The document reversion time: &quot;,
-            &quot;modify_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;
-        },
-        &quot;hide-element&quot;: {
-            &quot;elements&quot;: [&quot;.gitbook-link&quot;]
-        }
-    }
-}
+        <span class="token property">&quot;local-pagefooter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;copyright&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jordan&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;islocal&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modify_label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;The document reversion time: &quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modify_format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hide-element&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;elements&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.gitbook-link&quot;</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <blockquote>
 <p>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x6267;&#x884C;<code>gitbook install</code></p>
 </blockquote>
 <footer class="page-footer"><span class="copyright">@jordan, powered by Gitbook</span><span class="footer-modification">The document reversion time: 
-2020-04-21 11:00:36
+2020-04-22 16:44:37
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -379,7 +389,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"我的book.json","level":"1.4","depth":1,"previous":{"title":"解决构建问题","level":"1.3.1","depth":2,"path":"first/04.md","ref":"first/04.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","include-codeblock","back-to-top-button","chapter-fold","simple-page-toc","page-toc-button","auto-scroll-table","popup","splitter","hide-element","code","-lunr","-search","search-pro","-livereload","-highlight","local-pagefooter","pageview-count","alerts","include-csv"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"include-csv":{},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"local-pagefooter":{"copyright":"jordan","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"popup":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"page-toc-button":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"jordan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","gitbook":"*"},"file":{"path":"first/03.md","mtime":"2020-04-21T03:00:36.531Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-21T03:01:35.820Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"我的book.json","level":"1.4","depth":1,"previous":{"title":"解决构建问题","level":"1.3.1","depth":2,"path":"first/04.md","ref":"first/04.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","include-codeblock","back-to-top-button","chapter-fold","simple-page-toc","page-toc-button","auto-scroll-table","popup","splitter","hide-element","code","-lunr","-search","search-pro","-livereload","prism","-highlight","local-pagefooter","pageview-count","alerts","include-csv"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"include-csv":{},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"local-pagefooter":{"copyright":"jordan","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"popup":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"page-toc-button":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"jordan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","gitbook":"*"},"file":{"path":"first/03.md","mtime":"2020-04-22T08:44:37.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T08:45:49.750Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
